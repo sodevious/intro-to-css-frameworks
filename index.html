@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
 
 		<title>Intro to CSS Frameworks | Startup Institute</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Intro to CSS Frameworks, at the Startup Insitute">
+		<meta name="author" content="Nicole Dominguez">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,24 +36,43 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Intro to CSS Frameworks</h1>
-					<h3><i>by Nicole Dominguez</i></h3>
-					<br />
-					<p>
-						<small>Startup Institute, April 9th, 2014</small>
-					</p>
+					<section>
+						<h1>Intro to CSS Frameworks</h1>
+						<h3><i>by Nicole Dominguez</i></h3>
+						<br />
+						<p>
+							<small>Startup Institute, April 9th, 2014</small>
+						</p>
+					</section>
+
+					<section>
+						<h2>About me</h2>
+
+						<p>Front End Developer & Designer at <a href="http://sawhorsemedia.com">Sawhorse Media</a></p>
+						<br />
+						<ul>
+							<li>Self taught</li>
+							<li>Dropped out of college</li>
+							<li>Freelance, startup & corporate over six years</li>
+							<li>Tweet at me! <a href="http://twitter.com/@sodevious">@sodevious</a></li>
+						</ul>
+
+						<aside class="notes">
+							Explain what Sawhorse does.
+							<br />
+							Muck Rack is a platform for journalists and pr professionals. The Shorty Awards honor the best of social media.
+						</aside>
+					</section>
 				</section>
 
 				<section>
+					<p>CSS frameworks are a set of HTML, CSS and JS components that offer a base foundation for web projects.</p>
+				</section>
+
 				<section>
-
-<p>CSS frameworks are
-	they offer a foundation for web projects
-
 
 Shat's out there
 and how to chose
@@ -94,7 +112,12 @@ More code (especially unused code) can bloat your website and cause performance 
 </section>
 
 <section>
-	<h2>Choose what works for you and your project.</h2>
+	<h2>Choose what works for you.</h2>
+
+<aside class="notes">
+At the end of the day, form your own opinions and make decisions that are best suited for you and your web projects.
+</aside>
+
 </section>
 
 <section>
@@ -105,7 +128,9 @@ More code (especially unused code) can bloat your website and cause performance 
 	</li>
 </ul>
 
-
+	<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
 </section>
 
 
@@ -420,6 +445,8 @@ function linkify( selector ) {
 
 				dependencies: [
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+
 				]
 			});
 		</script>
